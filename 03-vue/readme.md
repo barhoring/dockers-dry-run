@@ -12,8 +12,9 @@ create a vue.config.js
 ## Build with args
 
 docker build --build-arg MY_COOL_COLOR= . -t my-cool-vue-image:1
-docker build --build-arg MY_COOL_COLOR=pink . -t my-cool-vue-image:2
+docker build --build-arg MY_COOL_NAME=bar . -t my-cool-vue-image:2
 
+docker run --rm -it --name my-cool-vue-container -p 5000:5000 my-cool-vue-image:2
 docker run --rm -it --name my-cool-vue-container -p 5000:5000 my-cool-vue-image:2
 
 ```bash

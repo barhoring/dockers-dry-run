@@ -13,7 +13,7 @@ export default {
   },
   data() {
     return {
-      msg: process.env,
+      msg: process.env.VUE_APP_MY_COOL_NAME,
     };
   },
 };
