@@ -11,5 +11,3 @@ COPY my-cool-vue-app .
 RUN npm ci && npm run build
 
 CMD [ "serve", "dist" ]
-# CMD [ "echo", "'$MY-COOL-ARG'" ]
-# docker build --build-arg MY-COOL-ARG=swed24sw . -t my-cool-vue-image
